@@ -24,4 +24,9 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
         Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
 }
