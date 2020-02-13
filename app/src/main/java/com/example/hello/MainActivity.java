@@ -29,10 +29,4 @@ public class MainActivity extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
     }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-    }
 }
-
