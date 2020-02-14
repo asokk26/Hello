@@ -19,4 +19,9 @@ public class DemoActivity extends AppCompatActivity {
     public void onSaveInstanceState(@NonNull Bundle outState, @NonNull PersistableBundle outPersistentState) {
         super.onSaveInstanceState(outState, outPersistentState);
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
 }
