@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -39,6 +40,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onApplyThemeResource(Resources.Theme theme, int resid, boolean first) {
         super.onApplyThemeResource(theme, resid, first);
+    }
+
+    @Override
+    public boolean onKeyUp(int keyCode, KeyEvent event) {
+        return super.onKeyUp(keyCode, event);
     }
 }
 
