@@ -1,9 +1,11 @@
 package com.example.hello;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.view.ActionMode;
 import android.view.KeyEvent;
 import android.widget.Toast;
 
@@ -45,6 +47,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onKeyUp(int keyCode, KeyEvent event) {
         return super.onKeyUp(keyCode, event);
+    }
+
+    @Nullable
+    @Override
+    public ActionMode onWindowStartingActionMode(ActionMode.Callback callback) {
+        return super.onWindowStartingActionMode(callback);
     }
 }
 
