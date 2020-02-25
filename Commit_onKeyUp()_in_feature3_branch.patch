@@ -1,0 +1,26 @@
+Index: app/src/main/java/com/example/hello/MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/hello/MainActivity.java	(revision 9968ca754ee4808867dd2e6193596c64cca33d2f)
++++ app/src/main/java/com/example/hello/MainActivity.java	(date 1582607239000)
+@@ -4,6 +4,7 @@
+ 
+ import android.content.res.Resources;
+ import android.os.Bundle;
++import android.view.KeyEvent;
+ import android.widget.Toast;
+ 
+ public class MainActivity extends AppCompatActivity {
+@@ -40,5 +41,10 @@
+     protected void onApplyThemeResource(Resources.Theme theme, int resid, boolean first) {
+         super.onApplyThemeResource(theme, resid, first);
+     }
++
++    @Override
++    public boolean onKeyUp(int keyCode, KeyEvent event) {
++        return super.onKeyUp(keyCode, event);
++    }
+ }
+ 

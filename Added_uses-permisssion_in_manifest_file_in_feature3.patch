@@ -1,0 +1,15 @@
+Index: app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/AndroidManifest.xml	(revision 9d99a09ffe3360c8545a6c33fd6087e9aca0121e)
++++ app/src/main/AndroidManifest.xml	(date 1582607757000)
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="com.example.hello">
++<uses-permission android:name="android.permission.INTERNET"/>
+ 
+     <application
+         android:allowBackup="true"
