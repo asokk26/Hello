@@ -19,13 +19,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-		Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
+
+	        Toast.makeText(this, "onStart()", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "", Toast.LENGTH_LONG).show();
     }
 
     @Override
